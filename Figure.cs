@@ -48,14 +48,14 @@ public abstract class Figure
 
             using (var g = Graphics.FromImage(p.Image))
             {
-                g.FillEllipse(Brushes.Black, x, y, (int)radius, (int)radius);
+                g.DrawEllipse(Pens.Black, x, y, (int)radius, (int)radius);
             }
         }
         public override void HideDrawingBackGround(PictureBox p)
         {
             using (var g = Graphics.FromImage(p.Image))
             {
-                g.FillEllipse(Brushes.White, x, y, (int)radius, (int)radius);
+                g.DrawEllipse(Pens.White, x, y, (int)radius, (int)radius);
                
             }
            
